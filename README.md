@@ -38,7 +38,8 @@ Heading
 ✅ add button
 ✅ remove button
 ✅ display list 
-  -add id's and classes for HTML elements
+✅ ingredient input (string values)
+✅ add id's and classes for HTML elements
   -add event listener for add ingredient button 
   -add event listener for remove ingredient button
 
