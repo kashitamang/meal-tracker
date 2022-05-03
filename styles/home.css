@@ -1,1 +1,41 @@
 /* add home page styles here */
+* {
+    box-sizing:border-box;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+input {
+    width: 200px;
+}
+
+select {
+    width: 200px;
+}
+
+button{
+    width: 150px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+.ingredient-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+}
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    display: flex;
+    justify-content: end;
+}

@@ -24,3 +24,41 @@ Additional considerations:
   - What needs to live in a persistence layer?
 - Is there some state we need to initialize?
 - Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be resused?)
+
+✅
+
+🎁 HTML Elements
+Heading 
+
+🎁 ADD INGREDIENTS SECTION 🎁  
+
+-ingredient input (string valyes)
+-quantity input (use number values)
+-measurement dropdown (use select tag with options)
+-add button
+-remove button
+-display list 
+
+
+Meal name input
+Event(s)
+Save button click
+State
+Array of Meals with the following structure:
+{
+  name: 'Black Bean Salad',
+  ingredientCount: 2
+}
+Functions
+renderMeal - return an <li> with the meal info
+displayMeals - clears the list of meals, loops through the state and calls renderMeal for each meal in state
+
+To Do List
+ Add input and button html
+ Add button event listener
+ Create the meal object using the input value as well as the current list of ingredients
+ Push the meal object onto the meals array
+ Clear out the ingredients state and call displayIngredients
+ Write our renderMeal function
+ Write out displayMeals function (calling renderMeal for each item in the meals array)
+ Call displayMeals
