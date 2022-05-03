@@ -20,30 +20,29 @@
         <section>
             <h4>add ingredients</h4>
             <div class="ingredients">
-                <form>
+                <form id="add-ingredients">
                     <label> Ingredient:
-                        <input type="text">
-                    </label> Quantity:
-                    <label type="number">
-                        <input>
+                        <input type="text" name="ingredient" id="ingredient">
+                    </label> 
+                    <label> Quantity: 
+                        <input type="number" name="quantity" id="quantity">
                     </label>
                     <label> Measurement: 
-                        <select>
-                            <option>cups</option>
-                            <option>teaspoons</option>
-                            <option>tablespoons</option>
+                        <select name="measurement" id="measurement">
+                            <option value="cups">cups</option>
+                            <option value="tablespoons">teaspoons</option>
+                            <option value="tablespoons">tablespoons</option>
                         </select>
                     </label>
+                    <button type="submit">add ingredient</button>
                 </form>
                 <div class="ingredient-list">
-                    ingredients list: 
+                    <ul id="ingredient-list">
+                    </ul>
+                    <button id="remove">remove ingredient</button>
                 </div>
-                <button>add ingredient</button>
-                <button>remove ingredient</button>
             </div>
         </section>
-        <section></section>
-        <section></section>
     </main>
     <footer>
         <div class="copy gutter-right">&copy; 2022 aspiring software engineer</div>

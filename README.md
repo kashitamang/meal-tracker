@@ -32,13 +32,15 @@ Heading
 
 🎁 ADD INGREDIENTS SECTION 🎁  
 
-✅ ingredient input (string valyes)
+✅ ingredient input (string values)
 ✅ quantity input (use number values)
 ✅ measurement dropdown (use select tag with options)
 ✅ add button
 ✅ remove button
 ✅ display list 
-
+  -add id's and classes for HTML elements
+  -add event listener for add ingredient button 
+  -add event listener for remove ingredient button
 
 Meal name input
 Event(s)
@@ -49,12 +51,14 @@ Array of Meals with the following structure:
   name: 'Black Bean Salad',
   ingredientCount: 2
 }
+
+
 Functions
 renderMeal - return an <li> with the meal info
 displayMeals - clears the list of meals, loops through the state and calls renderMeal for each meal in state
 
 To Do List
- Add input and button html
+ ✅Add input and button html
  Add button event listener
  Create the meal object using the input value as well as the current list of ingredients
  Push the meal object onto the meals array
