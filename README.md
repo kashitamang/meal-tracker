@@ -25,19 +25,19 @@ Additional considerations:
 - Is there some state we need to initialize?
 - Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be resused?)
 
-✅
+
 
 🎁 HTML Elements
 Heading 
 
 🎁 ADD INGREDIENTS SECTION 🎁  
 
--ingredient input (string valyes)
--quantity input (use number values)
--measurement dropdown (use select tag with options)
--add button
--remove button
--display list 
+✅ ingredient input (string valyes)
+✅ quantity input (use number values)
+✅ measurement dropdown (use select tag with options)
+✅ add button
+✅ remove button
+✅ display list 
 
 
 Meal name input

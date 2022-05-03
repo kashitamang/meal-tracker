@@ -24,12 +24,6 @@ label {
     flex-direction: column;
 }
 
-.ingredient-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 20px;
-}
 div {
     display: flex;
     flex-direction: column;
