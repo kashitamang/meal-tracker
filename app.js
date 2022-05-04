@@ -2,8 +2,11 @@
 
 const form = document.getElementById('add-ingredients');
 const ingredientsList = document.getElementById('ingredients-list');
+const remove = document.getElementById('remove');
 
 //console.log(ingredientsList);
+//console.log(form);
+//console.log(remove);
 
 
 // let state
@@ -44,21 +47,31 @@ form.addEventListener('submit', (e) => {
 //create an object to "model" ingredient like so:
 // {ingredient: 2 cups chips}
 //create object from the form, push it onto the ingredients array
+    // get user input
+
     let ingredient = {
         ingredient: formData.get('ingredient'),
         quantity: formData.get('quantity'),
         measurement: formData.get('measurement'),
     };
+    // use user input to update state 
 
     mealIngredient.push(ingredient);
     console.log(ingredient);
 
+  // update DOM to reflect the new state
     displayIngredients();
 
     //reset the form
     form.reset();
 });
 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+//remove ingredient button 
+
+remove.addEventListener('click', () => {
+//step 2 add code to allow users to remove the most recent state
+//console.log('clicking the remove button');
+    mealIngredient.pop();
+    displayIngredients();
+
+});
