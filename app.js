@@ -14,7 +14,7 @@ const remove = document.getElementById('remove');
 
 let mealIngredient = [];
 
-//Functions to add to utils.js later
+//Functions 
 
 export function displayIngredients(){
     ingredientsList.textContent = '';
