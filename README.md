@@ -40,8 +40,8 @@ Heading
 ✅ display list 
 ✅ ingredient input (string values)
 ✅ add id's and classes for HTML elements
-  -add event listener for add ingredient button 
-  -add event listener for remove ingredient button
+✅add event listener for add ingredient button 
+✅add event listener for remove ingredient button
 
 Meal name input
 Event(s)
@@ -60,7 +60,7 @@ displayMeals - clears the list of meals, loops through the state and calls rende
 
 To Do List
  ✅Add input and button html
- Add button event listener
+ ✅Add button event listener
  Create the meal object using the input value as well as the current list of ingredients
  Push the meal object onto the meals array
  Clear out the ingredients state and call displayIngredients

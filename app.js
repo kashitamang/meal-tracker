@@ -1,4 +1,5 @@
 // import functions and grab DOM elements
+import { renderIngredient } from './utils.js';
 
 const form = document.getElementById('add-ingredients');
 const ingredientsList = document.getElementById('ingredients-list');
@@ -15,15 +16,7 @@ let mealIngredient = [];
 
 //Functions to add to utils.js later
 
-//renderIngredient: returns and HTML element for ingredient data 
-function renderIngredient(booger){
-    const li = document.createElement('li');
-    li.textContent = `${booger.quantity} ${booger.measurement} ${booger.ingredient}`;
-    return li;
-}
-//`displayIngredients` (IMPURE) loops through each ingredient
-//calls renderIngredient and appends to DOM
-function displayIngredients(){
+export function displayIngredients(){
     ingredientsList.textContent = '';
     for (let booger of mealIngredient){
         const li = renderIngredient(booger);
