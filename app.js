@@ -4,15 +4,18 @@ import { renderIngredient } from './utils.js';
 const form = document.getElementById('add-ingredients');
 const ingredientsList = document.getElementById('ingredients-list');
 const remove = document.getElementById('remove');
+const save = document.getElementById('save-button');
 
 //console.log(ingredientsList);
 //console.log(form);
 //console.log(remove);
-
+console.log(save);
 
 // let state
 
 let mealIngredient = [];
+let meals = [];
+
 
 //Functions 
 
@@ -50,7 +53,7 @@ form.addEventListener('submit', (e) => {
     // use user input to update state 
 
     mealIngredient.push(ingredient);
-    console.log(ingredient);
+    //console.log(ingredient);
 
   // update DOM to reflect the new state
     displayIngredients();
@@ -68,3 +71,5 @@ remove.addEventListener('click', () => {
     displayIngredients();
 
 });
+
+
