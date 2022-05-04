@@ -93,7 +93,7 @@ save.addEventListener('click', () => {
 
     meals.push(meal);
     displayMeals();
-    mealName.value = '';
+    //mealName.value = '';
     //console.log('clicking meal button');
 
     //console.log('list of meals', meal);
