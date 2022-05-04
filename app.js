@@ -40,6 +40,11 @@ function displayMeals(){
     }
 }
 
+function resetIngredients(){
+    mealIngredient = [];
+    ingredientsList.textContent = '';
+}
+
 // set event listeners 
 
 //add ingredient button 
@@ -97,5 +102,5 @@ save.addEventListener('click', () => {
     //console.log('clicking meal button');
 
     //console.log('list of meals', meal);
-
+    resetIngredients();
 });
