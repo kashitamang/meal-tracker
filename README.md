@@ -65,6 +65,7 @@ To Do List
  ✅Add input and button html
  ✅Add button event listener
  Create the meal object using the input value as well as the current list of ingredients
+ meal name: number of ingredients
  Push the meal object onto the meals array
  Clear out the ingredients state and call displayIngredients
  Write our renderMeal function

@@ -4,5 +4,12 @@ export function renderIngredient(booger){
     li.textContent = `${booger.quantity} ${booger.measurement} ${booger.ingredient}`;
     return li;
 }
-//`displayIngredients` (IMPURE) loops through each ingredient
-//calls renderIngredient and appends to DOM
+
+//`renderMeal` (PURE): 
+//which returns an HTML element with meal data (name, total ingredients)
+
+export function renderMeal(booger){
+    const li = document.createElement('li');
+    li.textContent = `${booger.name}: ${booger.ingredientCount} ingredients`;
+    return li;
+}

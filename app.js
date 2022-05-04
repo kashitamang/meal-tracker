@@ -1,29 +1,42 @@
 // import functions and grab DOM elements
-import { renderIngredient } from './utils.js';
+import { renderIngredient, renderMeal} from './utils.js';
 
 const form = document.getElementById('add-ingredients');
 const ingredientsList = document.getElementById('ingredients-list');
 const remove = document.getElementById('remove');
 const save = document.getElementById('save-button');
+const mealList = document.getElementById('meal-list');
+const mealName = document.getElementById('meal-name');
 
 //console.log(ingredientsList);
 //console.log(form);
 //console.log(remove);
 console.log(save);
+console.log(mealList);
+console.log(mealName);
 
 // let state
 
 let mealIngredient = [];
 let meals = [];
 
-
 //Functions 
 
-export function displayIngredients(){
+//(IMPURE) loops through each ingredient, calls renderIngredient and appends to DOM
+function displayIngredients(){
     ingredientsList.textContent = '';
     for (let booger of mealIngredient){
         const li = renderIngredient(booger);
         ingredientsList.appendChild(li);
+    }
+}
+
+//(IMPURE) loops through each meal, calls renderMeal and appends to DOM
+function displayMeals(){
+    mealList.textContent = '';
+    for (let booger of meals){
+        const li = renderMeal(booger);
+        mealList.appendChild(li);
     }
 }
 
@@ -72,4 +85,19 @@ remove.addEventListener('click', () => {
 
 });
 
+save.addEventListener('click', () => {
+  //step 3- add code to allow users to save the state
+    console.log('clicking meal button');
+  //
+    mealList.value = '';
 
+    let meal = {
+        ingredientCount: mealIngredient.length,
+        name: mealName.value,
+    };
+    meals.push(meal);
+    console.log('list of meals', meal);
+
+    displayMeals();
+
+});
