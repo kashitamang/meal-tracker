@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-import { renderIngredient, renderMeal} from './utils.js';
+import { renderIngredient, renderMeal } from './utils.js';
 
 const form = document.getElementById('add-ingredients');
 const ingredientsList = document.getElementById('ingredients-list');
@@ -11,9 +11,9 @@ const mealName = document.getElementById('meal-name');
 //console.log(ingredientsList);
 //console.log(form);
 //console.log(remove);
-console.log(save);
-console.log(mealList);
-console.log(mealName);
+//console.log(save);
+//console.log(mealList);
+//console.log(mealName);
 
 // let state
 
@@ -27,7 +27,7 @@ function displayIngredients(){
     ingredientsList.textContent = '';
     for (let booger of mealIngredient){
         const li = renderIngredient(booger);
-        ingredientsList.appendChild(li);
+        ingredientsList.append(li);
     }
 }
 
@@ -36,7 +36,7 @@ function displayMeals(){
     mealList.textContent = '';
     for (let booger of meals){
         const li = renderMeal(booger);
-        mealList.appendChild(li);
+        mealList.append(li);
     }
 }
 
@@ -82,22 +82,20 @@ remove.addEventListener('click', () => {
 //console.log('clicking the remove button');
     mealIngredient.pop();
     displayIngredients();
-
 });
 
 save.addEventListener('click', () => {
   //step 3- add code to allow users to save the state
-    console.log('clicking meal button');
-  //
-    mealList.value = '';
-
     let meal = {
         ingredientCount: mealIngredient.length,
         name: mealName.value,
     };
-    meals.push(meal);
-    console.log('list of meals', meal);
 
+    meals.push(meal);
     displayMeals();
+    mealName.value = '';
+    //console.log('clicking meal button');
+
+    //console.log('list of meals', meal);
 
 });

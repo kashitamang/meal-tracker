@@ -22,10 +22,10 @@
             <div class="ingredients">
                 <form id="add-ingredients">
                     <label> Ingredient:
-                        <input type="text" name="ingredient" id="ingredient" placeholder="ingredient">
+                        <input type="text" name="ingredient" id="ingredient" placeholder="ingredient" required>
                     </label> 
                     <label> Quantity: 
-                        <input type="number" name="quantity" id="quantity" placeholder="quantity">
+                        <input type="number" name="quantity" id="quantity" placeholder="quantity" required>
                     </label>
                     <label> Measurement: 
                         <select name="measurement" id="measurement" required>
@@ -46,7 +46,7 @@
         <section>
             <h4>save meal</h4>
             <label>Meal Name
-                <input type="text" id="meal-name">
+                <input type="text" id="meal-name" placeholder="meal name" required>
             </label>
             <button id="save-button">save meal</button>
         </section>
